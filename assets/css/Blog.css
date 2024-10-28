@@ -1,0 +1,141 @@
+
+/*************************section All-Articles******************/
+#All-Articles{
+    .container{
+        .heading{
+            margin-top: 56px;
+            .main-title{
+                h1{
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 38px;
+                }
+            }
+        }
+        .courses-cards{
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(280px,385px));
+            justify-content: space-between;
+            row-gap: 35px;
+            .card{
+                max-width: 385px;
+                border-radius: 20px;
+                border: 1px  solid #EAEAEA;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                .img-card{
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 20px 20px 0 0;
+                }
+                .card-text{
+                    margin-left:  20px;
+                    h4{
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    }
+                }
+                .Calendar-today{
+                    margin-left:  20px;
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: var(--sec-color);
+                        .fa-calendar{
+                            padding-right: 8px;
+                            color: var(--orange-color);
+                        }
+                    }
+                }
+                .card-content{
+                    margin-left:  20px;
+                    p{
+                        margin-bottom: 20px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: var(--sec-color);
+                    }
+                }
+            }
+        }
+    }
+}
+/*************************section Slider-Pagination******************/
+#Slider-Pagination{
+    .container{
+        margin: 70px 639px;
+        max-width:288px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        .mySlides{
+            width:48px;;
+            height:48px;
+            padding: 10px 20px;
+            border-radius: 24px;
+            border: 1px solid #EAEAEA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{ 
+                width: 11px;
+                font-weight: 500;
+                line-height: 27px;
+                color: var(--primary-color);
+            }
+            .number-text{
+                width:48px;;
+                padding: 10px 20px;
+                border-radius: 24px;
+                background-color: var(--primary-color);
+                span{
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+/*************************section Responsive***********************/
+@media screen and (max-width : 992px){
+    .hero-pages{ 
+        padding: 87px 20px;
+        .content-hero{
+            margin: 18px 20px;
+        }
+    }
+    #All-Articles{
+        margin: 0;
+        .container{
+            .heading{
+                flex-direction: column;
+                align-items: flex-start;
+                .main-title{
+                    h1{
+                        margin-bottom: 32px;
+                    }
+                }
+                .heading-list{
+                    .input-search{
+                        max-width: 100%;
+                    }
+                }
+            }
+            .courses-cards{
+                margin-top: 50px;
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+    #Slider-Pagination{
+        .container{
+            margin:70px 40px;
+        }
+    }
+}

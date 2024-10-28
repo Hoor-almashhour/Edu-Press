@@ -1,0 +1,218 @@
+/*************************section location ***********************/
+#location{
+    .container{
+        margin-top: 56px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        .heading{
+            max-width: 410px;
+            .main-title{
+                h1{
+                    font-size: 36px;
+                    font-weight: 600;
+                    line-height: 43px;
+                }
+            }
+            .info{
+                max-width: 410px;
+                .text{
+                    margin-top: 24px;
+                    p{
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: var(--sec-color);
+                    }
+                }
+                .phone{
+                    margin-top: 16px;
+                    max-width:194px;
+                    height:58px;
+                    gap: 24px;
+                    display: flex;
+                    align-items: center;
+                    .phone-icon{
+                        width:56px;
+                        height:56px;
+                        padding:16px 16px;
+                        border-radius: 8px;
+                        background-color:var(--light-grey);
+                        .fa-phone{
+                            width: 23px;
+                            height: 23px;
+                            padding: 4px 4px;
+                            color: var(--orange-color);
+                        }
+                    }    
+                    .phone-number{
+                        span{
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 27px;
+                            color: var(--sec-color); 
+                        }
+                        h5{
+                            padding-top: 12px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 19px;
+                        }
+                    }
+                }
+                .email{
+                    margin: 16px 0;
+                    max-width:261px;
+                    height:58px;
+                    gap: 24px;
+                    display: flex;
+                    align-items: center;
+                    .content-icon{
+                        width:56px;
+                        height:56px;
+                        padding:16px 16px;
+                        border-radius: 8px;
+                        background-color:var(--light-grey);
+                        .fa-envelope{
+                            width: 26px;
+                            height: 21px;
+                            padding: 4px 4px;
+                            color: var(--orange-color);
+                        }
+                    }
+                    .content-email{
+                        max-width: 181px;
+                        span{
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 27px;
+                            color: var(--sec-color); 
+                        }
+                        h5{
+                            padding-top: 12px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 19px;
+                        }
+                    }
+                }
+            }
+        }
+        .map{
+            iframe{
+                height: 390px;
+                width: 55vw;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+/*************************section Contact*************************/
+#Contact{
+    margin: 70px;
+    .container{
+        .heading{
+            .main-title{
+                h2{
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        form{
+            .form-inputs{
+                margin-top: 30px;
+                max-width: 89vw;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                .input-container{
+                    max-width: 89vw;
+                    display: flex;
+                    gap: 20px;
+                    input{
+                        width: 89vw;
+                        height: 48px;
+                        padding: 10px 16px;
+                        border: 1px solid var(--grey-color);
+                    }
+                }
+                .Comment{
+                    textarea{
+                        width: 89vw;
+                        height: 110px;
+                        padding: 10px 16px;
+                        border-radius: 8px;
+                        border: 1px solid var(--grey-color);
+                    }
+                }
+                .actions-container{
+                    display: flex;
+                    input{
+                        color: var(--grey-color);
+                    }
+                    p{
+                        padding-left: 7px;
+                        color: var(--sec-color);
+                    }
+                }
+            }
+        }
+    }
+}
+/*************************section Responsive***********************/
+@media screen and (max-width : 992px){
+    .hero-pages{ 
+        padding: 87px 20px;
+        .content-hero{
+            margin: 18px 20px;
+        }
+    }
+    #location{
+        margin: 0;
+        .container{
+            max-width: 100%;
+            flex-direction: column;
+            .heading{
+                margin: 0 20px;
+                max-width: 320px;
+                .main-title{
+                    h1{
+                        font-size: 32px;
+                        line-height: 38px;
+                    }
+                }
+                .info{
+                    max-width: 320px; 
+                }
+            }
+            .map{
+                iframe{
+                    width: 100%;
+                    border-radius: 0;
+                    margin: 30px auto;
+                }
+            }
+        }
+    }
+    #Contact{
+        margin: 40px auto;
+        .container{
+            .heading{
+                max-width: 320px;
+            }
+            form{
+                .form-inputs{
+                    flex-direction: column;
+                    .input-container{
+                        flex-direction: column;
+                    }
+                    .actions-container{
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

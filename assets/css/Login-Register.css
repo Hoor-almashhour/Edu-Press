@@ -1,0 +1,112 @@
+
+/*************************section Login-Register ***********************/
+#Login-Register{
+    .container{
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        form{
+            .form-container{
+                margin-top: 56px;
+                max-width: 609px;
+                padding: 30px 30px;
+                border-radius: 20px;
+                border: 1px solid #EAEAEA;
+                .form-title{
+                    h2{
+                        font-size: 32px;
+                        font-weight: 600;
+                        line-height: 38.4px;
+                    }
+                }
+                .form-inputs{
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .input-container{
+                        max-width: 549px;
+                        display: flex;
+                        position: relative;
+                        gap: 20px;
+                        input{
+                            width: 549px;
+                            height: 48px;
+                            padding: 10px 16px;
+                            border: 1px solid var(--grey-color);
+                        }
+                        .fa-eye{
+                            position: absolute;
+                            right: 17px;
+                            top: 17px;
+                            color: var(--grey-color);
+                        }
+                    }
+                    .actions-container{
+                        display: flex;
+                        input{
+                            color: var(--grey-color);
+                        }
+                        p{
+                            padding-left: 5px;
+                            color: var(--sec-color);
+                        }
+                    }
+                    p{
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+        .Register{
+            .form-container{
+                max-width: 585px;
+                .form-inputs{
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .input-container{
+                        max-width: 525px;
+                        input{
+                            width: 525px;
+                            height: 48px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*************************section Responsive*************************/
+@media screen and (max-width : 992px){
+    .hero-pages{ 
+        padding: 87px 20px;
+        .content-hero{
+            margin: 18px 20px;
+        }
+    }
+    #Login-Register{
+        .container{
+            flex-direction: column;
+            flex-wrap: nowrap;
+            form{
+                .form-container{
+                    .form-inputs{
+                        flex-direction: column;
+                        justify-content: center;
+                        .input-container{
+                            justify-content: center;
+                            input{
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
