@@ -16,11 +16,13 @@ body{
 }
 .hero-pages{
     height:60px;
-    padding: 72px 10px;
+    margin-top: 72px;
     background-color: var(--light-grey);
+    display: flex;
     .content-hero{
-        margin: 18px 70px;
+        padding-left: 70px;
         display: flex;
+        align-items: center;
         p{
             padding-right: 8px;
             font-size: 16px;
