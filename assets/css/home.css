@@ -41,9 +41,6 @@
     .container{
         .heading{
             .main-title{
-                h2{
-                    width: 220px;
-                } 
                 p{
                     width: 239px;
                 }
@@ -120,11 +117,6 @@
 #Featured{
     .container{
         .heading{
-            .main-title{
-                h2{
-                    width: 260px;
-                }
-            }
             .btns { 
                 .secondary-btn{
                     width:139px;

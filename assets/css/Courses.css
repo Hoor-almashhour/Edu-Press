@@ -125,7 +125,7 @@
 /*************************section Slider-Pagination******************/
 #Slider-Pagination{
     .container{
-        margin: 70px 639px;
+        margin: 70px auto;
         max-width:288px;
         display: flex;
         justify-content: center;
@@ -203,7 +203,7 @@
     }
     #Slider-Pagination{
         .container{
-            margin:70px 40px;
+            margin:70px 70px;
         }
     }
 }
